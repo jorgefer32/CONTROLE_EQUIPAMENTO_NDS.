@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Equipamentos NDS</title>
+</head>
+<body>
+    <h1>Lista de Equipamentos NDS</h1>
+    <ul>
+        {% for equipamento in equipamentos %}
+            <li>{{ equipamento.nome }} - {{ equipamento.descricao }}</li>
+        {% empty %}
+            <li>Nenhum equipamento disponível.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+l>

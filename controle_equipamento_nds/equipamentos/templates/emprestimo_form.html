@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Empréstimo de Equipamento</title>
+</head>
+<body>
+    <h1>Empréstimo de Equipamento</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Empréstimo</button>
+    </form>
+</body>
+</html>
